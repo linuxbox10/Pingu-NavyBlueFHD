@@ -1,0 +1,16 @@
+<skin>
+    <fonts>
+    <font filename="lcd.ttf" name="LCD" scale="100" />
+    <font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+    <font filename="tuxtxt.ttf" name="Console" scale="100" />
+    <font filename="nmsbd.ttf" name="Arial" scale="100" />
+			<font filename="/usr/share/enigma2/Pingu-NavyBlue/font/MyriadPro-Regular.otf" name="RegularLCD" scale="100" />
+		<font filename="/usr/share/enigma2/Pingu-NavyBlue/font/MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
+		<font filename="/usr/share/enigma2/Pingu-NavyBlue/font/MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
+
+    <font filename="/usr/share/enigma2/Pingu-NavyBlue/font/cool.ttf" name="Regular" scale="100" />
+  <font filename="/usr/share/enigma2/Pingu-NavyBlue/font/md_khmurabi_10.ttf" name="RegularA" scale="100" />
+    <font filename="/usr/share/enigma2/Pingu-NavyBlue/font/roboto.ttf" name="Roboto_HD" scale="100" />
+	<font filename="/usr/share/enigma2/Pingu-NavyBlue/font/BoldCondensed.ttf" name="VFD" scale="100" />
+       </fonts>
+</skin>

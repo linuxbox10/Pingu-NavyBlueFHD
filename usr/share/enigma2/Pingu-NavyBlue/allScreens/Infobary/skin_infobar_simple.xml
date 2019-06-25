@@ -1,0 +1,67 @@
+<skin>
+<screen name="InfoBar" position="0,52" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="10,759" zPosition="-2" size="1920,255" pixmap="Pingu-NavyBlue/infobar_simple.png" />
+
+   <widget source="session.CurrentService" render="Label" position="85,775" size="650,48" font="HD_Thin; 42"  foregroundColor="#66CCCC" valign="top" noWrap="1"  backgroundColor="black" transparent="1" halign="left">
+    <convert type="gExtraTuner">ServiceNumberName</convert>
+  </widget>
+
+      <widget  pixmap="Pingu-NavyBlue/progress.png" position="323,901" render="Progress" size="1200,6" source="session.Event_Now" transparent="1" zPosition="3">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  <widget source="session.Event_Now" render="Label" position="320,845" size="105,36" font="HD_Thin; 32" halign="left" backgroundColor="black" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="422,845" size="20,36" font="HD_Thin; 30" halign="left" backgroundColor="black" transparent="1" foregroundColor="white" />
+  <widget source="session.Event_Now" render="Label" position="446,845" size="900,40" font="HD_Thin; 32" halign="left" backgroundColor="black" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1350,845" size="170,36" font="HD_Thin; 32" halign="right" backgroundColor="black" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="320,916" size="105,36" font="HD_Thin; 32" halign="left" foregroundColor="#808080" backgroundColor="black" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="422,916" size="20,36" font="HD_Thin; 30" halign="left" foregroundColor="#808080" backgroundColor="black" transparent="1" />
+  <widget source="session.Event_Next" render="Label" position="446,916" size="900,40" font="HD_Thin; 32" halign="left" backgroundColor="black" transparent="1" foregroundColor="#808080">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="1350,916" size="170,36" font="HD_Thin; 32" halign="right" foregroundColor="#808080" backgroundColor="black" transparent="1">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+
+  <widget source="global.CurrentTime" render="Label" position="1712,775"  size="150,48" font="HD_Thin; 46" halign="left" backgroundColor="black" transparent="1" valign="center">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget alphatest="blend" position="70,830" render="j00zekPicons" picontype="picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget backgroundColor="black" font="HD_Thin; 26" halign="center" position="1410,788" foregroundColor="white"  render="Label" size="300,30" source="global.CurrentTime" transparent="1" valign="center" noWrap="1" >
+    <convert type="ClockToText">Format:%d %B %Y </convert>
+  </widget>
+ 
+  <!-- POGODA -->
+    <eLabel text="Pogoda teraz :" position="1690,835" size="200,28" font="Roboto_HD; 23" backgroundColor="black" halign="center" transparent="1" foregroundColor="lemon" />
+    <widget alphatest="blend" render="BlackHarmonyMSNWeatherPixmap" position="1540,830" size="136,136" source="session.BlackHarmonyMSNWeather" transparent="1" zPosition="5">
+      <convert type="BlackHarmonyMSNWeather">weathericon,current,/usr/share/enigma2/Pingu-NavyBlue/weather_icons/,png</convert>
+    </widget>
+
+	
+	
+	
+    <widget noWrap="1" backgroundColor="black" font="Roboto_HD; 30" render="Label" position="1745,870" size="100,35" source="session.BlackHarmonyMSNWeather" zPosition="3" halign="right" transparent="1" valign="top">
+      <convert type="BlackHarmonyMSNWeather">temperature_current</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="black" font="Roboto_HD; 30" render="Label" position="1755,930" size="90,35" source="session.BlackHarmonyMSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white" valign="top">
+      <convert type="BlackHarmonyMSNWeather">feelslike</convert>
+    </widget>
+
+    <eLabel font="Roboto_HD; 18" foregroundColor="yellow" halign="center" name="new eLabel" position="1705,905" size="150,20" text="temp.odczuwalna" transparent="1" zPosition="2" valign="center" backgroundColor="black" />
+
+
+	</screen>
+	</skin>

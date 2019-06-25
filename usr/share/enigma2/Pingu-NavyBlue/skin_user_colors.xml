@@ -1,0 +1,108 @@
+<skin>
+	<colors>
+	<color name="bpPodloga" value="#00000000" />
+	<color name="#58bcff" value="#009fd00b" />
+	<color name="ciel" value="#00ffffff" />
+	<color name="background" value="#25101010" />
+	<color name="background2" value="#0038435a" />
+	<color name="black" value="#00000000" />
+	<color name="Black" value="#00000000" />
+	<color name="blue" value="#004f6ef2" />
+	<color name="cyan" value="#0000ffff" />
+	<color name="cyan1" value="#0000deff" />
+	<color name="dark" value="#15102748" />
+	<color name="darkblue" value="#00084561" />
+	<color name="darkgrey" value="#00666666" />
+	<color name="DarkGrey" value="#00666666" />
+	<color name="foreground" value="#00dddddd" />
+	<color name="foreground0" value="#00f0f0f0" />
+	<color name="green" value="#00389416" />
+	<color name="grey" value="#008f8f8f" />
+	<color name="Grey" value="#00999999" />
+	<color name="hellgreen" value="#2256c856" />
+	<color name="jasny" value="#00bbbbbb" />
+	<color name="lemon" value="#00c1ea02" />
+	<color name="lime" value="#0000ff00" />
+	<color name="niebieski" value="#000078a0" />
+	<color name="orange" value="#00ffc000" />
+	<color name="pastel" value="#00f3f2b0" />
+	<color name="progresoazul" value="#1130608f" />
+	<color name="rds_text_bg" value="#00003258" />
+	<color name="red" value="#00ff2525" />
+	<color name="transparent" value="#ffffffff" />
+	<color name="Transparent" value="#ffffffff" />
+	<color name="transparent2" value="#ff000000" />
+	<color name="transpBlack" value="#41000000" />
+	<color name="trBlack2" value="#15000000" />
+	<color name="un10161616" value="#10161616" />
+	<color name="un253658a4" value="#253658a4" />
+	<color name="un30000000" value="#30000000" />
+	<color name="un353e575e" value="#353e575e" />
+	<color name="un4d5375" value="#004d5375" />
+	<color name="un50c2" value="#000050c2" />
+	<color name="un53a9ff" value="#0053a9ff" />
+	<color name="un58bcff" value="#0058bcff" />
+	<color name="un58ccff" value="#0058ccff" />
+	<color name="un66cc99" value="#0066cc99" />
+	<color name="un800000" value="#00800000" />
+	<color name="un8dbc" value="#00008dbc" />
+	<color name="un996699" value="#00996699" />
+	<color name="unbbbbbb" value="#00bbbbbb" />
+	<color name="unc8eaff" value="#00c8eaff" />
+	<color name="uncc99" value="#0000cc99" />
+	<color name="uncccccc" value="#00cccccc" />
+	<color name="undcaaaa" value="#00dcaaaa" />
+	<color name="undcdcdc" value="#00dcdcdc" />
+	<color name="une1ab06" value="#00e1ab06" />
+	<color name="unf23d21" value="#00f23d21" />
+	<color name="unfcc000" value="#00fcc000" />
+	<color name="unff0000" value="#00ff0000" />
+	<color name="unff000000" value="#ff000000" />
+	<color name="white" value="#00ffffff" />
+	<color name="yellow" value="#00bab329" />
+	<color name="yellowtlo" value="#00a85b00" />
+	</colors>
+	<windowstyle type="skinned" id="0">
+	<title offset="30,27" font="Regular;28" />
+	<color name="Background" color="#30000000" />
+	<color name="LabelForeground" color="white" />
+	<color name="ListboxBackground" color="#30000000" />
+	<color name="ListboxForeground" color="jasny" />
+	<color name="ListboxMarkedAndSelectedBackground" color="trBlack2" />
+	<color name="ListboxSelectedForeground" color="#53a9ff" />
+	<color name="ListboxMarkedBackground" color="#253658a4" />
+	<color name="ListboxMarkedForeground" color="#ff0000" />
+	<color name="ListboxMarkedAndSelectedBackground" color="trBlack2" />
+	<color name="ListboxMarkedAndSelectedForeground" color="#800000" />
+	<color name="WindowTitleForeground" color="#53a9ff" />
+	<color name="WindowTitleBackground" color="#30000000" />
+	<borderset name="bsWindow">
+	<pixmap pos="bpTopLeft" filename="Pingu-NavyBlue/skinned/b_gl.png" />
+	<pixmap pos="bpTop" filename="Pingu-NavyBlue/skinned/b_g.png" />
+	<pixmap pos="bpTopRight" filename="Pingu-NavyBlue/skinned/b_gp.png" />
+	<pixmap pos="bpLeft" filename="Pingu-NavyBlue/skinned/b_l.png" />
+	<pixmap pos="bpRight" filename="Pingu-NavyBlue/skinned/b_p.png" />
+	<pixmap pos="bpBottomLeft" filename="Pingu-NavyBlue/skinned/b_dl.png" />
+	<pixmap pos="bpBottom" filename="Pingu-NavyBlue/skinned/b_d.png" />
+	<pixmap pos="bpBottomRight" filename="Pingu-NavyBlue/skinned/b_dp.png" />
+	</borderset>
+	<borderset name="bsListboxEntry">
+	<pixmap pos="bpTop" 		filename="Pingu-NavyBlue/skinned/h-special.png"/>
+	<pixmap pos="bpBottom" 		filename="Pingu-NavyBlue/skinned/h-special.png"/>
+	</borderset>
+	</windowstyle>
+	<windowstyle type="skinned" id="1">
+	<color name="Background" color="trBlack2" />
+	<color name="LabelForeground" color="white" />
+	<color name="ListboxBackground" color="background" />
+	<color name="ListboxForeground" color="white" />
+	<color name="ListboxSelectedBackground" color="trBlack2" />
+	<color name="ListboxSelectedForeground" color="white" />
+	<color name="ListboxMarkedBackground" color="background" />
+	<color name="ListboxMarkedForeground" color="white" />
+	<color name="ListboxMarkedAndSelectedBackground" color="background" />
+	<color name="ListboxMarkedAndSelectedForeground" color="white" />
+	<color name="WindowTitleForeground" color="white" />
+	<color name="WindowTitleBackground" color="background" />
+	</windowstyle>
+</skin>

@@ -1,0 +1,53 @@
+<skin>
+<screen name="ChannelSelection" position="center,center" size="1920,1080" title="Channel selection" flags="wfNoBorder" backgroundColor="background" transparent="0">
+
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="Pingu-NavyBlue/menu/menu1.png" transparent="1" />
+   	  <widget source="global.CurrentTime" render="Label" position="1000,20" size="920,50" font="RegularA;40"  halign="center" backgroundColor="transpBlack" foregroundColor="#58bcff" transparent="1">
+      <convert type="ClockToText">Format:%A  %e  %B  %Y    %H:%M </convert>
+	   </widget>
+	 <widget source="session.VideoPicture" render="Pig" position=" 1146,123" size="650,362" zPosition="3" backgroundColor="#ff000000"/>
+  <widget source="Title" render="Label" position="50,20" size="1020,50" font="RegularA;44" halign="center" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+          	 <widget source="session.CurrentService" render="Label" position="1220,500" size="450,42" zPosition="2" font="Regular;34" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+		<convert type="ServiceName">Name</convert>
+		</widget>
+			<widget source="session.Event_Now" render="Label" position="1230,570" size="450,60" zPosition="2" halign="center" font="Regular;28" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1" >
+			<convert type="EventName">Name</convert>
+					</widget>		
+		<widget source="ServiceEvent" render="Progress" pixmap="Pingu-NavyBlue/chan_p_bar.png" position="1260,540" zPosition="1" size="400,20"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+            </widget>
+			 <widget source="session.Event_Now" render="Label" position="1140,535" size="105,33" halign="right" font="Regular; 28" foregroundColor="ciel" backgroundColor="bpPodloga" transparent="1" valign="center" zPosition="10">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1690,535" size="105,33" halign="left" font="Regular; 28" foregroundColor="ciel" backgroundColor="bpPodloga" transparent="1" valign="center" zPosition="10">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+	<ePixmap position="1260,540" zPosition="-1" size="400,20" pixmap="Pingu-NavyBlue/chan_p1_bar.png" alphatest="on" />
+			
+    <ePixmap pixmap="Pingu-NavyBlue/buttons/red.png" position="40,1040" size="250,20" alphatest="blend" />
+    <ePixmap pixmap="Pingu-NavyBlue/buttons/green.png" position="300,1040" size="250,20" alphatest="blend" />
+    <ePixmap pixmap="Pingu-NavyBlue/buttons/yellow.png" position="560,1040" size="250,20" alphatest="blend" />
+    <ePixmap pixmap="Pingu-NavyBlue/buttons/blue.png" position="820,1040" size="250,20" alphatest="blend" />
+    <widget name="key_red" position="100,1000" size="250,30" zPosition="1" font="Regular;26" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="380,1000" size="250,30" zPosition="1" font="Regular;26" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="630,1000" size="250,30" zPosition="1" font="Regular;26" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="900,1000" size="250,30" zPosition="1" font="Regular;26" halign="left" backgroundColor="black" transparent="1" />
+	
+	<ePixmap pixmap="Pingu-NavyBlue/scroll.png" position="1015,115" size="26,850" zPosition="5" alphatest="blend"/>
+	
+	 <widget name="list" position="90,115" size="948,845" scrollbarMode="showOnDemand" colorServiceDescription="#99ccff" colorServiceDescriptionSelected="#58bcff" colorEventProgressbar="blue" colorEventProgressbarSelected="#58bcff" colorEventProgressbarBorder="#99ccff" colorEventProgressbarBorderSelected="#58bcff" foregroundColorServiceNotAvail="#6a6a6a" serviceItemHeight="40" serviceNumberFont="Regular;28"  serviceNameFont="Regular;28" serviceInfoFont="Regular;26" selectionPixmap="Pingu-NavyBlue/menu/button950x40.png" transparent="1" foregroundColor="unbbbbbb" />
+  
+	     <widget alphatest="blend" render="EventListDisplay" position="1170,820" size="655,280" source="ServiceEvent" rowHeight="32" column0="0,70,white,Regular,25,0,0" column1="80,600,#00cc99,Regular,25,0,1" primetimeoffset="10">
+      <convert type="EventList">eventcount=5</convert>
+    </widget>
+  <widget source="ServiceEvent" render="ZPicon" position="1260,645" size="400,170" zPosition="2" transparent="1" alphatest="blend">
+      <convert type="ServiceName2">Reference</convert>
+    </widget>
+	 <ePixmap pixmap="Pingu-NavyBlue/buttons/epg.png" position="1250,1015" size="100,40" alphatest="blend" />
+    <ePixmap pixmap="Pingu-NavyBlue/buttons/menu.png" position="1400,1015" size="100,40" alphatest="blend" />
+	 <ePixmap pixmap="Pingu-NavyBlue/buttons/exit.png" position="1550,1015" size="100,40" alphatest="blend" />
+  
+      </screen>
+	</skin>

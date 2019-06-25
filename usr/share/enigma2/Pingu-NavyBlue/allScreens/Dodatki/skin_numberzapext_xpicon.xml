@@ -1,0 +1,16 @@
+ <skin>
+   <screen name="NumberZapExt" position="center,center" size="550,320" title="Kanal" flags="wfNoBorder" backgroundColor="transparent">
+   <ePixmap position="0,0" zPosition="-1" size="550,320" pixmap="Pingu-NavyBlue/channel_1.png" />
+   
+   
+   
+    <widget name="chPicon" position="170,130" size="220,132" alphatest="blend" />
+    <widget name="chName" position="30,80" size="500,50" halign="center" font="HD_Thin; 30" noWrap="1" backgroundColor="black" transparent="1" />
+    <widget name="chNum"  position="165,30" size="230,120" halign="center" foregroundColor="white" font="HD_Thin; 30" backgroundColor="black" transparent="1" />
+ 
+  
+		
+		
+	</screen>
+
+</skin>
